@@ -1,9 +1,9 @@
 # lifx-azulazul
-LIFX Azul Azul Effect | Efecto.
+LIFX AzulAzul Effect | Efecto.
 
-Function to power on a LIFX light with Azul Azul effect (blue/white colors transition).
+Function to power on a LIFX light with AzulAzul effect (blue/white colors transition).
 
-Función para encender un bombillo LIFX light con el efecto Azul Azul (transición de colores azul/blanco).
+Función para encender un bombillo LIFX light con el efecto AzulAzul (transición de colores azul/blanco).
 
 ## Quickstart | Inicio rápido
 
