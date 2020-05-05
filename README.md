@@ -1,5 +1,5 @@
 # lifx-azulazul
-LIFX AzulAzul Effect | Efecto.
+LIFX AzulAzul Effect | LIFX Efecto AzulAzul.
 
 Function to power on a LIFX light with AzulAzul effect (blue/white colors transition).
 
