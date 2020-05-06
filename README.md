@@ -1,9 +1,9 @@
 # lifx-azulazul
 LIFX AzulAzul Effect | LIFX Efecto AzulAzul.
 
-Function to power on a LIFX light with AzulAzul effect (blue/white colors transition).
+Node.js Function to power on a LIFX light with AzulAzul effect (blue/white colors transition).
 
-Función para encender un bombillo LIFX light con el efecto AzulAzul (transición de colores azul/blanco).
+Función en Node.js  para encender un bombillo LIFX light con el efecto AzulAzul (transición de colores azul/blanco).
 
 ## Quickstart | Inicio rápido
 
