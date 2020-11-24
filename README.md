@@ -11,7 +11,7 @@ Set your LIFX config in config.js:
 
 Establecer su configuración de LIFX en config.js:
 
-```
+```javascript
 const config = {
   lightId: '',
   accessToken: '',
@@ -20,9 +20,11 @@ const config = {
 
 Run:
 
-Correr:
+Ejecutar:
 
-```npm start```
+```bash
+npm start
+```
 
 ## Want to help? | ¿Quiere ayudar?
 
