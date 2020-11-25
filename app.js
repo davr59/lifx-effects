@@ -4,16 +4,16 @@ const { LifxEffects } = require('./lifx-effects');
 const lfixEffects = new LifxEffects(config);
 const args = process.argv.slice(2);
 switch (args[0]) {
-  case 'cartaginesgoal':
+  case 'cartagines_goal':
     lfixEffects.runCartaginesGoalEffect();
     break;
-  case 'cartagineswin':
+  case 'cartagines_win':
     lfixEffects.runCartaginesWinEffect();
     break;
-  case 'xboxon':
+  case 'xbox_on':
     lfixEffects.runXboxOnEffect();
     break;
-  case 'xboxachievement':
+  case 'xbox_achievement':
     lfixEffects.runXboxAchievementEffect();
     break;
 }
