@@ -1,9 +1,23 @@
-# lifx-azulazul
-LIFX AzulAzul Effect | LIFX Efecto AzulAzul.
+# lifx-effects
+LIFX Effects | LIFX Efectos.
 
-Node.js Function to power on a LIFX light with AzulAzul effect (blue/white colors transition).
+Node.js Function to power on a LIFX light with effects:
 
-Función en Node.js  para encender un bombillo LIFX light con el efecto AzulAzul (transición de colores azul/blanco).
+* Cartaginés Goal (blue/white fast color transition)
+* Cartaginés Win (blue/white slow color transition)
+* Xbox On (black/green slow color transition)
+* Xbox Achievement (black/green fast color transition)
+
+Reference: https://api.developer.lifx.com/docs/pulse-effect
+
+Función en Node.js  para encender un bombillo LIFX light con efectos:
+
+* Gol de Cartaginés (azul/blanco transición rápida de color)
+* Triunfo de Cartaginés (azul/blanco transición lenta de color)
+* Xbox Encendido (negro/verde transición lenta de color)
+* Logro en Xbox (negro/verde transición rápida de color)
+
+Referencia: https://api.developer.lifx.com/docs/pulse-effect
 
 ## Quickstart | Inicio rápido
 
@@ -23,7 +37,10 @@ Run:
 Ejecutar:
 
 ```bash
-npm start
+npm run cartagines_goal
+npm run cartagines_win
+npm run xbox_on
+npm run xbox_achievement
 ```
 
 ## Want to help? | ¿Quiere ayudar?
