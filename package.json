@@ -1,15 +1,22 @@
 {
-  "name": "lifx-azulazul",
+  "name": "lifx-effects",
   "version": "1.0.0",
-  "description": "lifx-azulazul",
+  "description": "lifx-effects",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.2"
+    "eslint": "^7.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "nodemon": "^2.0.6"
   },
   "scripts": {
-    "start": "node app.js"
+    "cartaginesgoal": "node app.js cartaginesgoal",
+    "cartagineswin": "node app.js cartagineswin",
+    "xboxon": "node app.js xboxon",
+    "xboxachievement": "node app.js xboxachievement"
   },
   "author": "davr59",
   "private": true
