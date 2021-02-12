@@ -12,7 +12,7 @@ class LifxEffects {
       color: 'white',
       from_color: 'blue',
     };
-    this._runPulse(this.config.lightGroupId, this.config.lightAccessToken, body);
+    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
   runCartaginesWinEffect() {
