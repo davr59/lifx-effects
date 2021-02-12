@@ -1,6 +1,6 @@
 const config = {
-  lightId: '',
-  accessToken: '',
+  lightGroupId: '',
+  lightAccessToken: '',
 };
 
 exports.config = config;

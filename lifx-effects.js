@@ -7,22 +7,22 @@ class LifxEffects {
 
   runCartaginesGoalEffect() {
     const body = {
-      period: 1,
+      period: 2,
       cycles: 3,
       color: 'white',
       from_color: 'blue',
     };
-    this._runPulse(this.config.lightId, this.config.lightAccessToken, body);
+    this._runPulse(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
   runCartaginesWinEffect() {
     const body = {
       period: 5,
       cycles: 3,
-      color: 'white',
+      color: 'rgb:0,0,0',
       from_color: 'blue',
     };
-    this._runPulse(this.config.lightId, this.config.lightAccessToken, body);
+    this._runPulse(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
   runXboxOnEffect() {
@@ -32,23 +32,31 @@ class LifxEffects {
       color: 'rgb:16,124,16',
       from_color: 'rgb:0,0,0',
     };
-    this._runPulse(this.config.lightId, this.config.lightAccessToken, body);
+    this._runPulse(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
   runXboxAchievementEffect() {
     const body = {
-      period: 1,
+      period: 2,
       cycles: 3,
       color: 'rgb:16,124,16',
       from_color: 'rgb:0,0,0',
     };
-    this._runPulse(this.config.lightId, this.config.lightAccessToken, body);
+    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
-  _runPulse(lightId, lightAccessToken, body) {
+  _runPulse(lightGroupId, lightAccessToken, body) {
+    this._run(lightGroupId, lightAccessToken, body, 'pulse');
+  }
+
+  _runBreathe(lightGroupId, lightAccessToken, body) {
+    this._run(lightGroupId, lightAccessToken, body, 'breathe');
+  }
+
+  _run(lightGroupId, lightAccessToken, body, method) {
     const options = {
       host: 'api.lifx.com',
-      path: `/v1/lights/${lightId}/effects/pulse`,
+      path: `/v1/lights/group_id:${lightGroupId}/effects/${method}`,
       method: 'POST',
       headers: {
         Authorization: `Bearer ${lightAccessToken}`,
