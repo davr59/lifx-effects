@@ -27,8 +27,8 @@ Establecer su configuración de LIFX en config.js:
 
 ```javascript
 const config = {
-  lightId: '',
-  accessToken: '',
+  lightGroupId: '',
+  lightAccessToken: '',
 };
 ```
 
