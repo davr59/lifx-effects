@@ -17,7 +17,7 @@
     "cartagines_win": "node app.js cartagines_win",
     "xbox_on": "node app.js xbox_on",
     "xbox_achievement": "node app.js xbox_achievement",
-    "bitcoin_high": "node app.js bitcoin_high"
+    "bitcoin_new_high": "node app.js bitcoin_new_high"
   },
   "author": "davr59",
   "private": true

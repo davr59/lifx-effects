@@ -45,7 +45,7 @@ class LifxEffects {
     this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
-  runBicoinHighEffect() {
+  runBitcoinNewHighEffect() {
     const body = {
       period: 2,
       cycles: 3,
