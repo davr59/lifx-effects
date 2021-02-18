@@ -1,22 +1,27 @@
 # lifx-effects
+
 LIFX Effects | LIFX Efectos.
 
 Node.js Function to power on a LIFX light with effects:
 
-* Cartaginés Goal (blue/white fast color transition)
-* Cartaginés Win (blue/white slow color transition)
-* Xbox On (black/green slow color transition)
-* Xbox Achievement (black/green fast color transition)
+- Cartaginés Goal (blue/white breathe color transition)
+- Cartaginés Win (blue/off pulse color transition)
+- Xbox On (off/green pulse color transition)
+- Xbox Achievement (off/green breathe color transition)
+- Bitcoin High (off/orange fast breathe color transition)
 
+Reference: https://api.developer.lifx.com/docs/breathe-effect
 Reference: https://api.developer.lifx.com/docs/pulse-effect
 
-Función en Node.js  para encender un bombillo LIFX light con efectos:
+Función en Node.js para encender un bombillo LIFX light con efectos:
 
-* Gol de Cartaginés (azul/blanco transición rápida de color)
-* Triunfo de Cartaginés (azul/blanco transición lenta de color)
-* Xbox Encendido (negro/verde transición lenta de color)
-* Logro en Xbox (negro/verde transición rápida de color)
+- Gol de Cartaginés (azul/blanco transición breathe de color)
+- Triunfo de Cartaginés (azul/apagado transición pulse de color)
+- Xbox Encendido (apagado/verde transición pulse de color)
+- Logro en Xbox (apagado/verde transición breathe de color)
+- Bitcoin Alto (apagado/anaranjado transición breathe de color)
 
+Referencia: https://api.developer.lifx.com/docs/breathe-effect
 Referencia: https://api.developer.lifx.com/docs/pulse-effect
 
 ## Quickstart | Inicio rápido
@@ -41,6 +46,7 @@ npm run cartagines_goal
 npm run cartagines_win
 npm run xbox_on
 npm run xbox_achievement
+npm run bitcoin_high
 ```
 
 ## Want to help? | ¿Quiere ayudar?

@@ -4,7 +4,7 @@
   "description": "lifx-effects",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^7.19.0",
+    "eslint": "^7.20.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
@@ -16,7 +16,8 @@
     "cartagines_goal": "node app.js cartagines_goal",
     "cartagines_win": "node app.js cartagines_win",
     "xbox_on": "node app.js xbox_on",
-    "xbox_achievement": "node app.js xbox_achievement"
+    "xbox_achievement": "node app.js xbox_achievement",
+    "bitcoin_high": "node app.js bitcoin_high"
   },
   "author": "davr59",
   "private": true

@@ -16,4 +16,7 @@ switch (args[0]) {
   case 'xbox_achievement':
     lfixEffects.runXboxAchievementEffect();
     break;
+  case 'bitcoin_high':
+    lfixEffects.runBicoinHighEffect();
+    break;
 }

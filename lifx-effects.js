@@ -45,6 +45,16 @@ class LifxEffects {
     this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
+  runBicoinHighEffect() {
+    const body = {
+      period: 2,
+      cycles: 3,
+      color: 'rgb:247,147,26',
+      from_color: 'rgb:0,0,0',
+    };
+    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+  }
+
   _runPulse(lightGroupId, lightAccessToken, body) {
     this._run(lightGroupId, lightAccessToken, body, 'pulse');
   }
