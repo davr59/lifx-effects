@@ -55,6 +55,13 @@ class LifxEffects {
     this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
+  runOff() {
+    const body = {
+      power_off: true,
+    };
+    this._run(this.config.lightGroupId, this.config.lightAccessToken, body, 'off');
+  }
+
   _runPulse(lightGroupId, lightAccessToken, body) {
     this._run(lightGroupId, lightAccessToken, body, 'pulse');
   }
