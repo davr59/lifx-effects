@@ -19,4 +19,7 @@ switch (args[0]) {
   case 'bitcoin_new_high':
     lifxEffects.runBitcoinNewHighEffect();
     break;
+  case 'bitcoin_new_low':
+    lifxEffects.runBitcoinNewLowEffect();
+    break;
 }

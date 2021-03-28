@@ -49,8 +49,18 @@ class LifxEffects {
     const body = {
       period: 2,
       cycles: 3,
-      color: 'rgb:247,147,26',
-      from_color: 'rgb:0,0,0',
+      color: 'green',
+      from_color: 'rgb:247,147,26',
+    };
+    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+  }
+
+  runBitcoinNewLowEffect() {
+    const body = {
+      period: 2,
+      cycles: 3,
+      color: 'red',
+      from_color: 'rgb:247,147,26',
     };
     this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
