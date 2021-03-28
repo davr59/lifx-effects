@@ -8,7 +8,8 @@ Node.js Function to power on a LIFX light with effects:
 - Cartaginés Win (blue/off pulse color transition)
 - Xbox On (off/green pulse color transition)
 - Xbox Achievement (off/green breathe color transition)
-- Bitcoin New High (off/orange fast breathe color transition)
+- Bitcoin New High (orange/green fast breathe color transition)
+- Bitcoin New Low (orange/red fast breathe color transition)
 
 Reference: https://api.developer.lifx.com/docs/breathe-effect
 Reference: https://api.developer.lifx.com/docs/pulse-effect
@@ -19,7 +20,8 @@ Función en Node.js para encender un bombillo LIFX light con efectos:
 - Triunfo de Cartaginés (azul/apagado transición pulse de color)
 - Xbox Encendido (apagado/verde transición pulse de color)
 - Logro en Xbox (apagado/verde transición breathe de color)
-- Bitcoin Nuevo Alto (apagado/anaranjado transición breathe de color)
+- Bitcoin Nuevo Alto (anaranjado/verde transición breathe de color)
+- Bitcoin Nuevo Bajo (anaranjado/rojo transición breathe de color)
 
 Referencia: https://api.developer.lifx.com/docs/breathe-effect
 Referencia: https://api.developer.lifx.com/docs/pulse-effect
@@ -47,6 +49,7 @@ npm run cartagines_win
 npm run xbox_on
 npm run xbox_achievement
 npm run bitcoin_new_high
+npm run bitcoin_new_low
 ```
 
 ## Want to help? | ¿Quiere ayudar?
