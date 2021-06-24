@@ -18,7 +18,8 @@
     "xbox_on": "node app.js xbox_on",
     "xbox_achievement": "node app.js xbox_achievement",
     "bitcoin_new_high": "node app.js bitcoin_new_high",
-    "bitcoin_new_low": "node app.js bitcoin_new_low"
+    "bitcoin_new_low": "node app.js bitcoin_new_low",
+    "gallotapado": "node app.js gallotapado"
   },
   "author": "davr59",
   "private": true

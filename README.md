@@ -10,6 +10,7 @@ Node.js Function to power on a LIFX light with effects:
 - Xbox Achievement (off/green breathe color transition)
 - Bitcoin New High (orange/green fast breathe color transition)
 - Bitcoin New Low (orange/red fast breathe color transition)
+- Lottery/Chances Draw, GalloTapado (red/white fast breathe color transition)
 
 Reference: https://api.developer.lifx.com/docs/breathe-effect
 Reference: https://api.developer.lifx.com/docs/pulse-effect
@@ -22,6 +23,7 @@ Función en Node.js para encender un bombillo LIFX light con efectos:
 - Logro en Xbox (apagado/verde transición breathe de color)
 - Bitcoin Nuevo Alto (anaranjado/verde transición breathe de color)
 - Bitcoin Nuevo Bajo (anaranjado/rojo transición breathe de color)
+- Lotería/Chances Sorteo, GalloTapado (rojo/blanco transición breathe de color)
 
 Referencia: https://api.developer.lifx.com/docs/breathe-effect
 Referencia: https://api.developer.lifx.com/docs/pulse-effect
@@ -50,6 +52,7 @@ npm run xbox_on
 npm run xbox_achievement
 npm run bitcoin_new_high
 npm run bitcoin_new_low
+npm run gallotapado
 ```
 
 ## Want to help? | ¿Quiere ayudar?

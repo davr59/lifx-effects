@@ -65,6 +65,16 @@ class LifxEffects {
     this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
+  runGalloTapadoEffect() {
+    const body = {
+      period: 2,
+      cycles: 3,
+      color: 'white',
+      from_color: 'red',
+    };
+    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+  }
+
   runOff() {
     const body = {
       power_off: true,

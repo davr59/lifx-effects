@@ -22,4 +22,7 @@ switch (args[0]) {
   case 'bitcoin_new_low':
     lifxEffects.runBitcoinNewLowEffect();
     break;
+  case 'gallotapado':
+    lifxEffects.runGalloTapadoEffect();
+    break;
 }
