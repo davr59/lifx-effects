@@ -23,7 +23,7 @@ Función en Node.js para encender un bombillo LIFX light con efectos:
 - Logro en Xbox (apagado/verde transición breathe de color)
 - Bitcoin Nuevo Alto (anaranjado/verde transición breathe de color)
 - Bitcoin Nuevo Bajo (anaranjado/rojo transición breathe de color)
-- Lotería/Chances Sorteo, GalloTapado (rojo/blanco transición breathe de color)
+- Sorteo de Lotería/Chances, GalloTapado (rojo/blanco transición breathe de color)
 
 Referencia: https://api.developer.lifx.com/docs/breathe-effect
 Referencia: https://api.developer.lifx.com/docs/pulse-effect
