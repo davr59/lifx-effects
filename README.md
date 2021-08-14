@@ -14,6 +14,7 @@ Node.js Function to power on a LIFX light with effects:
 - Random Color (off/random color fast breathe color transition)
 
 Reference: https://api.developer.lifx.com/docs/breathe-effect
+
 Reference: https://api.developer.lifx.com/docs/pulse-effect
 
 Función en Node.js para encender un bombillo LIFX light con efectos:
@@ -28,6 +29,7 @@ Función en Node.js para encender un bombillo LIFX light con efectos:
 - Color Aleatorio (apagado/color aleatorio transición breathe de color)
 
 Referencia: https://api.developer.lifx.com/docs/breathe-effect
+
 Referencia: https://api.developer.lifx.com/docs/pulse-effect
 
 ## Quickstart | Inicio rápido
