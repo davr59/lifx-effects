@@ -75,6 +75,19 @@ class LifxEffects {
     this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
   }
 
+  runRandomColorEffect(inputColor) {
+    console.log(`input color: "${inputColor || '-'}"`);
+    const color = this._buildColor(inputColor);
+    console.log(`random color: "${color}"`);
+    const body = {
+      period: 2,
+      cycles: 3,
+      color: 'rgb:0,0,0',
+      from_color: color,
+    };
+    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+  }
+
   runOff() {
     const body = {
       power_off: true,
@@ -88,6 +101,60 @@ class LifxEffects {
 
   _runBreathe(lightGroupId, lightAccessToken, body) {
     this._run(lightGroupId, lightAccessToken, body, 'breathe');
+  }
+
+  _buildColor(color) {
+    const _color = color ? color.trim().toLowerCase() : '';
+    switch (_color) {
+      case 'white':
+      case 'blanco':
+        return 'white';
+      case 'red':
+      case 'rojo':
+        return 'red';
+      case 'orange':
+      case 'naranja':
+      case 'anaranjado':
+        return 'orange';
+      case 'yellow':
+      case 'amarillo':
+        return 'yellow';
+      case 'cyan':
+      case 'cian':
+        return 'cyan';
+      case 'green':
+      case 'verde':
+        return 'green';
+      case 'blue':
+      case 'azul':
+        return 'blue';
+      case 'purple':
+      case 'morado':
+      case 'púrpura':
+      case 'purpura':
+        return 'purple';
+      case 'pink':
+      case 'rosado':
+      case 'rosa':
+        return 'pink';
+      case 'magenta':
+      case 'fuchsia':
+      case 'fucsia':
+        return 'magenta';
+      default:
+        return this._buildRandomColor();
+    }
+  }
+
+  _buildRandomColor() {
+    const r = this._random(0, 255);
+    const g = this._random(0, 255);
+    const b = this._random(0, 255);
+    return `rgb:${r},${g},${b}`;
+  }
+
+  _random(low, high) {
+    return Math.floor(Math.random() * (high - low + 1) + low);
   }
 
   _run(lightGroupId, lightAccessToken, body, method) {

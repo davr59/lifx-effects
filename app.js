@@ -25,4 +25,7 @@ switch (args[0]) {
   case 'gallotapado':
     lifxEffects.runGalloTapadoEffect();
     break;
+  case 'random_color':
+    lifxEffects.runRandomColorEffect(args[1]);
+    break;
 }
