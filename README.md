@@ -32,6 +32,10 @@ Referencia: https://api.developer.lifx.com/docs/breathe-effect
 
 Referencia: https://api.developer.lifx.com/docs/pulse-effect
 
+## Video
+
+playlight: https://www.youtube.com/watch?v=9vqBvDQhS4I
+
 ## Quickstart | Inicio rápido
 
 Set your LIFX config in config.js:
