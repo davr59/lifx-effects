@@ -2,6 +2,8 @@
 
 LIFX Effects | LIFX Efectos.
 
+- https://www.youtube.com/watch?v=9vqBvDQhS4I
+
 Node.js Function to power on a LIFX light with effects:
 
 - Cartaginés Goal (blue/white breathe color transition)
@@ -29,8 +31,6 @@ Función en Node.js para encender un bombillo LIFX light con efectos:
 - [Breathe effect | Efecto breathe](https://api.developer.lifx.com/docs/breathe-effect)
 
 - [Pulse effect | Efecto pulse](https://api.developer.lifx.com/docs/pulse-effect)
-
-- [Video](https://www.youtube.com/watch?v=9vqBvDQhS4I)
 
 ## Quickstart | Inicio rápido
 
