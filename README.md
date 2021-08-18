@@ -13,9 +13,9 @@ Node.js Function to power on a LIFX light with effects:
 - Lottery/Chances Draw, GalloTapado (red/white fast breathe color transition)
 - Random Color (off/random color fast breathe color transition)
 
-Breath effect reference: https://api.developer.lifx.com/docs/breathe-effect
+[Breathe effect](https://api.developer.lifx.com/docs/breathe-effect)
 
-Pulse effect reference: https://api.developer.lifx.com/docs/pulse-effect
+[Pulse effect](https://api.developer.lifx.com/docs/pulse-effect)
 
 Función en Node.js para encender un bombillo LIFX light con efectos:
 
@@ -28,13 +28,13 @@ Función en Node.js para encender un bombillo LIFX light con efectos:
 - Sorteo de Lotería/Chances, GalloTapado (rojo/blanco transición breathe de color)
 - Color Aleatorio (apagado/color aleatorio transición breathe de color)
 
-Referencia efecto breathe: https://api.developer.lifx.com/docs/breathe-effect
+[Efecto breathe](https://api.developer.lifx.com/docs/breathe-effect)
 
-Referencia efecto pulse: https://api.developer.lifx.com/docs/pulse-effect
+[Efecto pulse](https://api.developer.lifx.com/docs/pulse-effect)
 
 ## Video
 
-playlight: https://www.youtube.com/watch?v=9vqBvDQhS4I
+[playlight](https://www.youtube.com/watch?v=9vqBvDQhS4I)
 
 ## Quickstart | Inicio rápido
 
