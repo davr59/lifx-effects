@@ -26,11 +26,11 @@ Función en Node.js para encender un bombillo LIFX light con efectos:
 
 ## References | Referencias
 
-[Breathe effect | Efecto breathe](https://api.developer.lifx.com/docs/breathe-effect)
+- [Breathe effect | Efecto breathe](https://api.developer.lifx.com/docs/breathe-effect)
 
-[Pulse effect | Efecto pulse](https://api.developer.lifx.com/docs/pulse-effect)
+- [Pulse effect | Efecto pulse](https://api.developer.lifx.com/docs/pulse-effect)
 
-[video](https://www.youtube.com/watch?v=9vqBvDQhS4I)
+- [Video](https://www.youtube.com/watch?v=9vqBvDQhS4I)
 
 ## Quickstart | Inicio rápido
 
