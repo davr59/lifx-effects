@@ -1,4 +1,4 @@
-# LIFX Effects | LIFX Efectos
+# lifx effects | efectos en lifx
 
 - https://www.youtube.com/watch?v=9vqBvDQhS4I
 
