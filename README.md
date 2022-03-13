@@ -1,6 +1,6 @@
-# lifx-effects
+# lifx effects | efectos en lifx
 
-LIFX Effects | LIFX Efectos.
+- https://www.youtube.com/watch?v=9vqBvDQhS4I
 
 Node.js Function to power on a LIFX light with effects:
 
@@ -11,9 +11,7 @@ Node.js Function to power on a LIFX light with effects:
 - Bitcoin New High (orange/green fast breathe color transition)
 - Bitcoin New Low (orange/red fast breathe color transition)
 - Lottery/Chances Draw, GalloTapado (red/white fast breathe color transition)
-
-Reference: https://api.developer.lifx.com/docs/breathe-effect
-Reference: https://api.developer.lifx.com/docs/pulse-effect
+- Random Color (off/random color fast breathe color transition)
 
 Función en Node.js para encender un bombillo LIFX light con efectos:
 
@@ -24,9 +22,13 @@ Función en Node.js para encender un bombillo LIFX light con efectos:
 - Bitcoin Alto Nuevo (anaranjado/verde transición breathe de color)
 - Bitcoin Bajo Nuevo (anaranjado/rojo transición breathe de color)
 - Sorteo de Lotería/Chances, GalloTapado (rojo/blanco transición breathe de color)
+- Color Aleatorio (apagado/color aleatorio transición breathe de color)
 
-Referencia: https://api.developer.lifx.com/docs/breathe-effect
-Referencia: https://api.developer.lifx.com/docs/pulse-effect
+## References | Referencias
+
+- [Breathe effect | Efecto breathe](https://api.developer.lifx.com/docs/breathe-effect)
+
+- [Pulse effect | Efecto pulse](https://api.developer.lifx.com/docs/pulse-effect)
 
 ## Quickstart | Inicio rápido
 
@@ -53,6 +55,7 @@ npm run xbox_achievement
 npm run bitcoin_new_high
 npm run bitcoin_new_low
 npm run gallotapado
+npm run random_color
 ```
 
 ## Want to help? | ¿Quiere ayudar?
