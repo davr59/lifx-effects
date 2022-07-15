@@ -28,4 +28,6 @@ switch (args[0]) {
   case 'random_color':
     lifxEffects.runRandomColorEffect(args[1]);
     break;
+  default:
+    break;
 }

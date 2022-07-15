@@ -1,3 +1,5 @@
+/* eslint-disable no-underscore-dangle */
+
 const https = require('https');
 
 class LifxEffects {
@@ -12,7 +14,11 @@ class LifxEffects {
       color: 'white',
       from_color: 'blue',
     };
-    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+    LifxEffects._runBreathe(
+      this.config.lightGroupId,
+      this.config.lightAccessToken,
+      body,
+    );
   }
 
   runCartaginesWinEffect() {
@@ -22,7 +28,11 @@ class LifxEffects {
       color: 'rgb:0,0,0',
       from_color: 'blue',
     };
-    this._runPulse(this.config.lightGroupId, this.config.lightAccessToken, body);
+    LifxEffects._runPulse(
+      this.config.lightGroupId,
+      this.config.lightAccessToken,
+      body,
+    );
   }
 
   runXboxOnEffect() {
@@ -32,7 +42,11 @@ class LifxEffects {
       color: 'rgb:16,124,16',
       from_color: 'rgb:0,0,0',
     };
-    this._runPulse(this.config.lightGroupId, this.config.lightAccessToken, body);
+    LifxEffects._runPulse(
+      this.config.lightGroupId,
+      this.config.lightAccessToken,
+      body,
+    );
   }
 
   runXboxAchievementEffect() {
@@ -42,7 +56,11 @@ class LifxEffects {
       color: 'rgb:16,124,16',
       from_color: 'rgb:0,0,0',
     };
-    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+    LifxEffects._runBreathe(
+      this.config.lightGroupId,
+      this.config.lightAccessToken,
+      body,
+    );
   }
 
   runBitcoinNewHighEffect() {
@@ -52,7 +70,11 @@ class LifxEffects {
       color: 'green',
       from_color: 'rgb:247,147,26',
     };
-    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+    LifxEffects._runBreathe(
+      this.config.lightGroupId,
+      this.config.lightAccessToken,
+      body,
+    );
   }
 
   runBitcoinNewLowEffect() {
@@ -62,7 +84,11 @@ class LifxEffects {
       color: 'red',
       from_color: 'rgb:247,147,26',
     };
-    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+    LifxEffects._runBreathe(
+      this.config.lightGroupId,
+      this.config.lightAccessToken,
+      body,
+    );
   }
 
   runGalloTapadoEffect() {
@@ -72,12 +98,18 @@ class LifxEffects {
       color: 'white',
       from_color: 'red',
     };
-    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+    LifxEffects._runBreathe(
+      this.config.lightGroupId,
+      this.config.lightAccessToken,
+      body,
+    );
   }
 
   runRandomColorEffect(inputColor) {
+    // eslint-disable-next-line no-console
     console.log(`input color: "${inputColor || '-'}"`);
-    const color = this._buildColor(inputColor);
+    const color = LifxEffects._buildColor(inputColor);
+    // eslint-disable-next-line no-console
     console.log(`random color: "${color}"`);
     const body = {
       period: 2,
@@ -85,25 +117,34 @@ class LifxEffects {
       color: 'rgb:0,0,0',
       from_color: color,
     };
-    this._runBreathe(this.config.lightGroupId, this.config.lightAccessToken, body);
+    LifxEffects._runBreathe(
+      this.config.lightGroupId,
+      this.config.lightAccessToken,
+      body,
+    );
   }
 
   runOff() {
     const body = {
       power_off: true,
     };
-    this._run(this.config.lightGroupId, this.config.lightAccessToken, body, 'off');
+    LifxEffects._run(
+      this.config.lightGroupId,
+      this.config.lightAccessToken,
+      body,
+      'off',
+    );
   }
 
-  _runPulse(lightGroupId, lightAccessToken, body) {
-    this._run(lightGroupId, lightAccessToken, body, 'pulse');
+  static _runPulse(lightGroupId, lightAccessToken, body) {
+    LifxEffects._run(lightGroupId, lightAccessToken, body, 'pulse');
   }
 
-  _runBreathe(lightGroupId, lightAccessToken, body) {
-    this._run(lightGroupId, lightAccessToken, body, 'breathe');
+  static _runBreathe(lightGroupId, lightAccessToken, body) {
+    LifxEffects._run(lightGroupId, lightAccessToken, body, 'breathe');
   }
 
-  _buildColor(color) {
+  static _buildColor(color) {
     const _color = color ? color.trim().toLowerCase() : '';
     switch (_color) {
       case 'white':
@@ -142,22 +183,22 @@ class LifxEffects {
       case 'fucsia':
         return 'magenta';
       default:
-        return this._buildRandomColor();
+        return LifxEffects._buildRandomColor();
     }
   }
 
-  _buildRandomColor() {
-    const r = this._random(0, 255);
-    const g = this._random(0, 255);
-    const b = this._random(0, 255);
+  static _buildRandomColor() {
+    const r = LifxEffects._random(0, 255);
+    const g = LifxEffects._random(0, 255);
+    const b = LifxEffects._random(0, 255);
     return `rgb:${r},${g},${b}`;
   }
 
-  _random(low, high) {
+  static _random(low, high) {
     return Math.floor(Math.random() * (high - low + 1) + low);
   }
 
-  _run(lightGroupId, lightAccessToken, body, method) {
+  static _run(lightGroupId, lightAccessToken, body, method) {
     const options = {
       host: 'api.lifx.com',
       path: `/v1/lights/group_id:${lightGroupId}/effects/${method}`,
@@ -170,10 +211,13 @@ class LifxEffects {
     const request = https
       .request(options, (resp) => {
         resp.on('data', () => {});
+        // eslint-disable-next-line no-console
         resp.on('end', () => console.log('done'));
       })
       .on('error', (e) => {
+        // eslint-disable-next-line no-console
         console.log(e);
+        // eslint-disable-next-line no-console
         console.log('error');
       });
 
