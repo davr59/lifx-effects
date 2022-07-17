@@ -106,9 +106,11 @@ class LifxEffects {
   }
 
   runRandomColorEffect(inputColor) {
+    // TODO
     // eslint-disable-next-line no-console
     console.log(`input color: "${inputColor || '-'}"`);
     const color = LifxEffects._buildColor(inputColor);
+    // TODO
     // eslint-disable-next-line no-console
     console.log(`random color: "${color}"`);
     const body = {
@@ -211,12 +213,15 @@ class LifxEffects {
     const request = https
       .request(options, (resp) => {
         resp.on('data', () => {});
+        // TODO
         // eslint-disable-next-line no-console
         resp.on('end', () => console.log('done'));
       })
       .on('error', (e) => {
+        // TODO
         // eslint-disable-next-line no-console
         console.log(e);
+        // TODO
         // eslint-disable-next-line no-console
         console.log('error');
       });
